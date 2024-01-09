@@ -38,8 +38,6 @@ while Dice > 1:
     for k in range(1, FakeThrow+1) :
         Delay = k*DelayFraction
         FakeDice = random.randint(1, Dice+1)
-        while FakeDice > Dice :
-            FakeDice = random.randint(1, Dice+1)
         if len(Player[PlayerTurn]) <= 4:
             print(Player[PlayerTurn] +": \t\t" + str(FakeDice), flush=True, end="\r")
         else:
